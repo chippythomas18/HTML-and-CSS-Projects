@@ -1,0 +1,7 @@
+﻿/* CSS_Lists.css */
+ul {
+  list-style-type: upper-roman;
+}
+ol {
+  list-style-type: square;
+}

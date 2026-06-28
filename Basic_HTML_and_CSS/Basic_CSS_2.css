@@ -1,0 +1,5 @@
+/* Basic_CSS_2.css */
+.shadow-text {
+  color: #2c3e50;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
