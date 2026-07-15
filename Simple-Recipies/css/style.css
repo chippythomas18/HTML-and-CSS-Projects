@@ -1,0 +1,238 @@
+:root {
+    --primary-color: #8b5e3c;
+    --secondary-color: #f7efe8;
+    --accent-color: #a65b2e;
+    --text-color: #333333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background: #fffaf4;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: #2e7d32;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-bottom: 3px solid #8b5e3c;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    background: #ffffff;
+    min-width: 210px;
+    padding: 0.5rem 0;
+    border: 2px solid #8b5e3c;
+    border-top: none;
+    border-radius: 6px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.16);
+    z-index: 1001;
+}
+
+.dropdown-menu li {
+    list-style: none;
+}
+
+.dropdown-menu a {
+    display: block;
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    color: #8b5e3c;
+    font-style: italic;
+    font-weight: 600;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.dropdown-menu a:hover {
+    background-color: #bfe2ff;
+    color: #5a2f16;
+    transform: translateX(3px);
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    display: flex;
+}
+
+.site-banner {
+    background: linear-gradient(135deg, #2e7d32, #4caf50);
+    color: #ffffff;
+    text-align: center;
+    padding: 2.5rem 1rem 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.site-banner h1 {
+    margin: 0 0 0.5rem;
+    font-size: 2.2rem;
+}
+
+.site-banner p {
+    margin: 0;
+    font-size: 1rem;
+    opacity: 0.95;
+}
+
+.content-section,
+.about-section,
+.contact-section {
+    max-width: 960px;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.about-section {
+    background: var(--secondary-color);
+    border-left: 5px solid var(--accent-color);
+}
+
+.about-section h2,
+.contact-section h2 {
+    color: var(--primary-color);
+}
+
+.recipe-list {
+    display: grid;
+    gap: 1rem;
+}
+
+.recipe-card {
+    padding: 1rem 1.25rem;
+    border: 1px solid #e3d4c2;
+    border-left: 4px solid #8b5e3c;
+    border-radius: 8px;
+    background: #fffdf9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.recipe-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+    background-color: #eef7ff;
+}
+
+.recipe-card:nth-child(2n) {
+    border-left-color: #2e7d32;
+}
+
+.recipe-card h3 {
+    margin-top: 0;
+    color: #8b5e3c;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+input,
+textarea {
+    padding: 0.75rem;
+    border: 1px solid #d9c8b7;
+    border-radius: 6px;
+    font: inherit;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+}
+
+button {
+    align-self: flex-start;
+    background: transparent;
+    color: #2e7d32;
+    border: 2px solid #2e7d32;
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+button:hover {
+    background: #2e7d32;
+    color: #ffffff;
+}
+
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem 2rem;
+    margin: 2rem 0 0;
+    background: #2e7d32;
+    border-top: 3px solid #8b5e3c;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 0;
+}
+
+.footer-column h3 {
+    margin: 0 0 0.35rem;
+    color: #e0e0e0;
+}
+
+.footer-column p {
+    margin: 0;
+    color: #e0e0e0;
+}

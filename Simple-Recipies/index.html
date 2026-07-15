@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Recipes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#recipes" class="dropbtn">Recipes</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#recipe-featured">Featured Recipe</a></li>
+                        <li><a href="#recipe-pasta">Pasta</a></li>
+                        <li><a href="#recipe-chicken">Chicken</a></li>
+                        <li><a href="#recipe-pork">Pork</a></li>
+                        <li><a href="#recipe-biscuits">Biscuits</a></li>
+                        <li><a href="#recipe-fish">Fish</a></li>
+                        <li><a href="#recipe-dessert">Dessert</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section class="content-section">
+            <div>
+                <h1>Simple Recipes</h1>
+                <h2>Recipes</h2>
+            </div>
+
+            <div id="recipes" class="recipe-list">
+                <div id="recipe-featured" class="recipe-card">
+                    <h3>Deep Dish Skillet Pizza</h3>
+                    <p><strong>Prep Time:</strong> 30-40 minutes</p>
+                    <p><strong>Level:</strong> medium</p>
+                    <p>Deep dish pizza has got a lot going for it: a thick crust that's tender and chewy on the inside, but nicely crisped on the outside; a little extra room for piling on the toppings; and, deep dish is less needy than its thin crust style counterpart, which requires some care when rolling and stretching. Here, you just push the dough into the skillet and you're cooking. Save the leftovers for lunch!</p>
+                </div>
+
+                <div id="recipe-pasta" class="recipe-card">
+                    <h3>Saucy Tortellina Parm</h3>
+                    <p><strong>Prep Time:</strong> 20-30 minutes</p>
+                    <p><strong>Level:</strong> easy</p>
+                </div>
+
+                <div id="recipe-chicken" class="recipe-card">
+                    <h3>Mediterranean Chicken Thighs</h3>
+                    <p><strong>Prep Time:</strong> 20-30 minutes</p>
+                    <p><strong>Level:</strong> easy</p>
+                </div>
+
+                <div id="recipe-pork" class="recipe-card">
+                    <h3>Crispy Pork Katsu & Rice</h3>
+                    <p><strong>Prep Time:</strong> 20-30 minutes</p>
+                    <p><strong>Level:</strong> medium</p>
+                </div>
+
+                <div id="recipe-biscuits" class="recipe-card">
+                    <h3>Cheddar Cheese Biscuits</h3>
+                    <p><strong>Prep Time:</strong> 40-50 minutes</p>
+                    <p><strong>Level:</strong> medium</p>
+                </div>
+
+                <div id="recipe-fish" class="recipe-card">
+                    <h3>Baked Cod & Scalloped Potatoes</h3>
+                    <p><strong>Prep Time:</strong> 30-40 minutes</p>
+                    <p><strong>Level:</strong> easy</p>
+                </div>
+
+                <div id="recipe-dessert" class="recipe-card">
+                    <h3>S'mores Cake</h3>
+                    <p><strong>Prep Time:</strong> 50-60 minutes</p>
+                    <p><strong>Level:</strong> medium</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About</h2>
+            <div>
+                <p>Simple Recipes is your ultimate destination for easy-to-follow recipes that make cooking enjoyable for everyone, whether you're a seasoned chef or a beginner. Founded in the United States out of a passion for home cooking, our mission is to inspire and empower you to create delicious meals with everyday ingredients and simple techniques. We offer a wide range of diverse cuisines, from classic comfort foods to international dishes, all accompanied by step-by-step instructions and helpful tips to ensure your cooking experience is smooth and successful. Our dedicated team of home cooks and food enthusiasts meticulously test each recipe, so you can cook with confidence. At Simple Recipes, we believe that good food brings people together, and we're excited to have you join our community. Let's cook up something amazing together!</p>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+            <form>
+                <label for="first-name">First Name</label>
+                <input id="first-name" type="text" placeholder="John" value="John">
+
+                <label for="last-name">Last Name</label>
+                <input id="last-name" type="text" placeholder="Doe" value="Doe">
+
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="Your email" value="john.doe@example.com">
+
+                <label for="phone">Phone</label>
+                <input id="phone" type="tel" placeholder="Your phone" value="(555) 123-4567">
+
+                <label class="checkbox-label">
+                    <input type="checkbox" checked>
+                    Subscribe to newsletter
+                </label>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+        <footer class="site-footer">
+            <div class="footer-column">
+                <h3>Simple Recipes</h3>
+                <p>Easy meals for every home.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Address</h3>
+                <p>123 Kitchen Street, Austin, TX</p>
+            </div>
+            <div class="footer-column">
+                <h3>Phone</h3>
+                <p>(555) 987-6543</p>
+            </div>
+        </footer>
+    </body>
+</html>
