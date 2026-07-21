@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p class="tagline">I'm a web developer passionate about creating beautiful websites</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hello! My name is <strong>Chippy</strong>. I'm an aspiring web developer learning HTML, CSS, and more.
+                    </p>
+                    <p>
+                        I enjoy creating clean, responsive websites that look great on all devices. 
+                        I'm passionate about web development and constantly learning new skills.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE8zWUUfZMcffLW-VlhUAdt7l2KjIb-WSVNcNqpuVu5PsaM-hGiWB0dYEN&s=10" alt="Profile Picture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p class="contact-intro">Have a project in mind? Let's work together! Fill out the form below and I'll get back to you soon.</p>
+            
+            <form action="https://formspree.io/f/xkodjegw" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Write your message here" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
