@@ -3,79 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Chippy Thomas | Web Developer</title>
     <link rel="stylesheet" href="portfolio.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
 <body>
-    
-    <!-- Navigation Bar -->
     <nav class="navbar">
         <a class="nav-link active" href="#home">Home</a>
         <a class="nav-link" href="#about">About</a>
         <a class="nav-link" href="#projects">Projects</a>
-        <a class="nav-link" href="#contact">Contact</a>
+        <a class="nav-link contact-link" href="#contact" onclick="openForm()">Contact</a>
     </nav>
 
-    <!-- Home Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p class="tagline">I'm a web developer passionate about creating beautiful websites</p>
+            <h1>Hi, I'm Chippy</h1>
+            <p class="tagline">A beginner web developer building simple, responsive websites with HTML, CSS, and JavaScript.</p>
+            <div class="hero-links">
+                <a href="https://github.com/chippythomas18" target="_blank" rel="noreferrer">GitHub</a>
+                <a href="https://www.linkedin.com/in/chippythomas" target="_blank" rel="noreferrer">LinkedIn</a>
+            </div>
         </div>
     </section>
 
-    <!-- About Section -->
+
     <section id="about" class="about">
         <div class="container">
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>
-                        Hello! My name is <strong>Chippy</strong>. I'm an aspiring web developer learning HTML, CSS, and more.
-                    </p>
-                    <p>
-                        I enjoy creating clean, responsive websites that look great on all devices. 
-                        I'm passionate about web development and constantly learning new skills.
-                    </p>
+                    <p>Hello! My name is <strong>Chippy Thomas</strong>. I am learning web development and enjoy creating clean, easy-to-use websites.</p>
+                    <p>I am practicing HTML, CSS, and JavaScript, and I like solving problems with code. I also enjoy learning new design ideas and improving my page layouts.</p>
+                    <p>I completed training at The Tech Academy and I am excited to build more projects and share my work.</p>
                 </div>
                 <div class="about-image">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE8zWUUfZMcffLW-VlhUAdt7l2KjIb-WSVNcNqpuVu5PsaM-hGiWB0dYEN&s=10" alt="Profile Picture">
+                    <img src="https://enjoyedp.com/wp-content/uploads/2025/09/cute-girl-profile-photo-hd.jpg" alt="Profile photo">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="showcase" class="slideshow-section">
         <div class="container">
-            <h2>Get In Touch</h2>
-            <p class="contact-intro">Have a project in mind? Let's work together! Fill out the form below and I'll get back to you soon.</p>
-            
-            <form action="https://formspree.io/f/xkodjegw" method="POST" class="contact-form">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <h2>Featured Images</h2>
+            <div class="slideshow-container">
+                <figure class="slide slide-1 active">
+                    <img src="https://thumbs.dreamstime.com/b/developer-programmer-woman-coding-software-computer-developer-programmer-woman-coding-software-231060005.jpg" alt="Modern landing page design">
+                    <figcaption>Profile pic</figcaption>
+                </figure>
+                <figure class="slide slide-2">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw6wUBurRfZSDquLSH35gDeuasJUb2RLvDgwLXTcGPr466QTCGtDQR2O1h&s=10" alt="Portfolio project overview">
+                    <figcaption>Software development</figcaption>
+                </figure>
+                <figure class="slide slide-3">
+                    <img src="https://camo.githubusercontent.com/aaceb9279ca6022c42d2fa912611e9deff15517b675c335f3730ce44fa2edc22/68747470733a2f2f7777772e69696d2e66722f65636f6c652d7765622f77702d636f6e74656e742f75706c6f6164732f323031372f30312f48544d4c352e6a7067" alt="HTML and CSS">
+                    <figcaption>HTML and CSS</figcaption>
+                </figure>
+            </div>
+            <div style="text-align:center; margin-top: 20px;">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <p class="projects-intro">These are a few beginner projects that show my growth in web development.</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://storage.googleapis.com/website-production/uploads/2023/07/homepage-vs-landing-page-difference-770x384.webp" alt="Project 1 screenshot">
+                    <h3>Simple Landing Page</h3>
+                    <p>A clean landing page made with HTML and CSS to practice layout, navigation, and responsive design.</p>
                 </div>
-
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <div class="project-card">
+                    <img src="https://i.ytimg.com/vi/Clll-ZcI2RY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBIKzRlddg3F10GXMTOZUpGjSN5Ww" alt="Project 2 screenshot">
+                    <h3>Portfolio Website</h3>
+                    <p>This portfolio page shows who I am, links to my profiles, and a contact form to connect with visitors.</p>
                 </div>
-
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" placeholder="Write your message here" rows="5" required></textarea>
+                <div class="project-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSx9364xnGxVhH7U5iYayGi_v4pmUSonWuEH8WNgOGgdd4zpvXJE3Oices&s=10" alt="Project 3 screenshot">
+                    <h3>Contact Form</h3>
+                    <p>A contact form built using HTML form fields and simple JavaScript that shows a confirmation message.</p>
                 </div>
-
-                <button type="submit" class="submit-btn">Send Message</button>
-            </form>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <div class="form-popup" id="myForm">
+        <form action="https://formspree.io/f/xkodjegw" method="POST" class="contact-form form-container">
+            <h2>Contact Me</h2>
+            <div class="form-group">
+                <input type="text" id="popup-name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" id="popup-email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <textarea id="popup-message" name="message" placeholder="Write your message here" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+            <button type="button" class="submit-btn cancel-btn" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <button type="button" class="contact-toggle-btn" id="contactToggleBtn" onclick="openForm()">Contact</button>
+
     <footer class="footer">
-        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+        <p>Connect on <a href="https://github.com/chippythomas18" target="_blank" rel="noreferrer">GitHub</a> or <a href="https://www.linkedin.com/in/your-linkedin-profile" target="_blank" rel="noreferrer">LinkedIn</a>.</p>
+        <p>&copy; <span class="footer-year"></span> Chippy Thomas</p>
     </footer>
 
+    <script src="portfolio.js"></script>
 </body>
 </html>
